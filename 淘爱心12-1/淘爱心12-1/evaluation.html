@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>淘爱心评论</title>
+<link type="text/css" rel="stylesheet" href="style/reset.css">
+<link type="text/css" rel="stylesheet" href="style/main.css">
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script type="text/javascript" src="js/comment.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="headerBar">
+	<div class="topBar">
+		<div class="comWidth">
+            <div class="leftArea">
+				<a href="#" class="collection">收藏淘爱心</a>
+			</div>
+			<div class="rightArea">
+				<span class="fl">欢迎来到淘爱心！</span>
+                <div class="account fl" id="account">
+                    <a href="#">qq191995762</a>
+                        <div class="mune" id="account_mune">
+                            <div class="shangmian">
+                                <div class="leftArea">
+                                <a href="#"><img src="images/20090710204947-1746744117.jpg" alt=""></a>
+                                </div>
+                                <div class="account_mang rightArea">
+                                    <div class="fr qingfu"><a>账号管理</a><a>退出</a></div>
+                                    <div class="fl qingfu"><a href="#"><img src="images/huiyuan4.jpg"></a></div>
+                                     <div class="fl qingfu"> <a href="#">我可尊享15项特权</a></div>
+                                </div>
+                            </div>
+                            <div class="h_1 qingfu"></div>
+                            <div class="xiamian qingfu">
+                            <a href="#"><div class="tqtime">我当前享受2天节日特权</div></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="wdtax fl" id="wdtax">
+                    <a href="#">我的淘爱心</a>
+                    <ul class="mune" id="wdtax_mune">
+                        <li><a href="#">已淘到的爱心</a></li>
+                        <li><a href="#">我的足迹</a></li>
+                        <li><a href="#">爱公益</a></li>
+                        <li><a href="#">新欢</a></li>
+                    </ul>
+                </div>
+                <div class="fl"><a href="#">我的消息</a></div>
+                <div class="favorites fl" id="favorites">
+                    <a href="#">收藏夹</a>
+                    <ul class="mune" id="favorites_mune">
+                        <li><a href="#">收藏的宝贝</a></li>
+                        <li><a href="#">收藏的店铺</a></li>
+                    </ul>
+                </div>
+                <div class="seller fl" id="seller">
+                    <a href="#">卖家中心</a>
+                    <ul class=" mune" id="seller_mune">
+                        <li><a href="#">免费开店</a></li>
+                        <li><a href="#">已卖出的宝贝</a></li>
+                        <li><a href="#">出售中宝贝</a></li>
+                        <li><a href="#">卖家资质</a></li>
+                    </ul>
+                </div>
+                <div class="service fl" id="service">
+                    <a href="#">联系客服</a>
+                    <ul class="mune" id="service_mune">
+                        <li><a href="#">收藏的宝贝</a></li>
+                        <li><a href="#">收藏的店铺</a></li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+	</div>
+  <div class="logoBar">
+		<div class="comWidth">
+			<div class="logo fl">
+				<a href=""><img src="images/logo/淘爱心2.jpg" alt="淘爱心"></img></a>
+			</div>
+			<div class="search_box fl">
+				<input type="text" class="search_text fl">
+				<input type="button" value="搜 索" class="search_btn fr">
+			</div>
+			<div class="shopCar fr">
+				<span class="shopText fl">购物车</span>
+				<span class="shopNum fl">0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="smallcomWidth">
+    <div class="content">
+    	<ol class="tb-rate-nav-steps">
+        	<li class=" done">
+            <span class="first">1.确认订单信息</span>
+            </li>
+            <li class=" done">
+            <span>2.付款到支付宝</span>
+            </li>
+            <li class=" done current-prev">
+            <span>3.确认收货</span>
+            </li>
+            <li class=" last-current	">
+            <strong>4.评价</strong>
+            </li>
+        </ol>
+       <div class="shopdetail tb-rate-mb-m">
+        	<div class="hd">
+            <h3>店铺优惠</h3>
+           </div>
+           <div class="bd">
+           <a class="shop-logo"><img width="70" height="70" src="images/T1tGSUXjpnXXXXXXXX-70-70.png"></a>
+           <dl>
+               <dt>
+                   <h3>
+                   <a href="#"> 淘爱心二手书专营店</a>
+                   </h3>
+               </dt>
+               <dd>
+                被评卖家：<a class="remark-to" href="#">淘爱心二手书专营店</a>
+               </dd>
+               <dd>
+               宝贝与描述相符：
+               <span class="c-value-no c-value-4d9">
+               	<em></em>
+               </span>
+               4.9
+               </dd>
+               
+           </dl>
+           </div>
+        </div>
+       <div class="itemlist tb-rate-mb-m" style="border: 1px solid #DDD;">
+           <div class="listhd">
+               <h3>店铺动态评分</h3>
+               <ul class="act">
+                   <li>
+                    <input type="checkbox" id="annoy-all" name="annoy-all">
+                    <label for="annoy-all">全部匿名评论</label>
+                   </li>
+               </ul>
+           </div>
+           <div class="listbd"> 
+               <ul class="labels">
+               	<li class="itemdetail">宝贝</li>
+                	<li class="level">
+                  宝贝与描述相符<span class="exp">(打分匿名)</span>
+                  </li>  
+               </ul>
+               <ul class="rate-list">
+               		<li class="rate-box st-show-msg-box">
+                        <div class="item-rate-info">
+                            <div class="item-detail">
+                            <a class="item-d-img" href="#"><img  width="60" height="60" src="images/03a44ef98e510841be396fb91ed1d90b.jpg"></a>
+                            <h3>
+                                <a href="#">
+                                最好看的书，值得一看，让你从容面对人生，人生向导
+                             </a>
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="quiz">
+                        <h3>我要评论</h3>
+                            <div class="quiz_content">
+                                <form action="" id="" method="post">
+                                    <div class="goods-comm">
+                                        <div class="goods-comm-stars">
+                                            <span class="star_l">满意度：</span>
+                                            <div id="rate-comm-1" class="rate-comm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="l_text">
+                                        <label class="m_flo">内  容：</label>
+                                        <textarea name="" id="" class="text"></textarea>
+                                        <span class="tr">字数限制为5-200个</span>
+                                    </div>
+                                    <button class="btm" type="submit"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+               </ul>
+               <!--<div class="rating-box">
+               	<div class="hd labels">
+                		<h3>店铺动态评分</h3>
+                	</div>
+                  <div class=" bd">
+                  	<ul class="pingfenxize">
+                    		<li>
+                         		<div class="goods-comm">
+                                        <div class="goods-comm-stars">
+                                            <span class="star_l">满意度：</span>
+                                            <div id="rate-comm-2" class="rate-comm"></div>
+                                        </div>
+                                    </div>   
+                         </li>
+                         <li>2</li>
+                    	</ul>
+                  </div>
+               </div>-->
+               <div class="submitbox">
+               </div>
+           </div>
+        </div>
+        <div class="des_infoContent">
+                <h3 class="shopDes_tit"> 其他顾客评价</h3>
+                <div class="score_box clearfix">
+                    <div class="score">
+                        <span>4.7</span><em>分</em>
+                    </div>
+                    <div class="score_speed">
+                        <ul class="score_speed_text">
+                            <li class="speed_01">非常不满意</li>
+                            <li class="speed_02">不满意</li>
+                            <li class="speed_03">一般</li>
+                            <li class="speed_04">满意</li>
+                            <li>非常满意</li>
+                        </ul>
+                        <div class="score_num">
+                            4.7<i></i>
+                        </div>
+                        <p>共18939位网友参与评分</p>
+                    </div>
+                </div>
+                <div class="review_tab">
+                    <ul class="review fl">
+                        <li><a href="#" class="active">全部</a></li>
+                        <li><a href="#">满意（3121）</a></li>
+                        <li><a href="#">一般（321）</a></li>
+                        <li><a href="#">不满意（1121）</a></li>
+                    </ul>
+                    <div class="review_sort fr">
+                        <a href="#" class="review_time">时间排序</a><a href="#" class="review_reco">推荐排序</a>
+                    </div>
+                </div>
+                <div class="review_listBox">
+                    <div class="review_list clearfix">
+                        <div class="review_userHead fl">
+                            <div class="review_user">
+                                <img src="images/u=2973194105,396998596&fm=15&gp=0.jpg" alt="">
+                                <p>61***42</p>
+                                <p>金色会员</p>
+                            </div>
+                        </div>
+                        <div class="review_cont">
+                            <div class="review_t clearfix">
+                                <div class="starsBox fl"><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span></div>
+                                <span class="stars_text fl">5分 满意</span>
+                            </div>
+                            <p>东西很好，好评</p>
+                            <p><a href="#" class="ding">顶(0)</a><a href="#" class="cai">踩(0)</a></p>
+                        </div>
+                    </div>
+                    <div class="review_list clearfix">
+                        <div class="review_userHead fl">
+                            <div class="review_user">
+                                <img src="images/u=3218438768,2141070550&fm=21&gp=0.jpg" alt="">
+                                <p>61***42</p>
+                                <p>金色会员</p>
+                            </div>
+                        </div>
+                        <div class="review_cont">
+                            <div class="review_t clearfix">
+                                <div class="starsBox fl"><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span></div>
+                                <span class="stars_text fl">5分 满意</span>
+                            </div>
+                            <p>东西很好，好评</p>
+                            <p><a href="#" class="ding">顶(0)</a><a href="#" class="cai">踩(0)</a></p>
+                        </div>
+                    </div>
+                    <div class="hr_25"></div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<div class="hr_25"></div>
+<div class="footer">
+	<div class="comWidth clearfix">
+    	<div class="footitem">
+        <h3>关于淘爱心</h3>
+        <ul class="data ">
+				<li><a href="#" class="active">关于我们</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+        </div>
+        <div class="footitem">
+        <h3>爱心资质</h3>
+        <ul class="data">
+				<li><a href="#" class="active">发布人资质</a></li>
+				<li><a href="#">接单人资质</a></li>
+				<li><a href="#">必备审核材料</a></li>
+			</ul>
+        </div>
+        <div class="footitem">
+        <h3>购物帮助</h3>
+        <ul class="data">
+				<li><a href="#" class="active">购物须知</a></li>
+				<li><a href="#">订单相关</a></li>
+				<li><a href="#">商品相关</a></li>
+              <li><a href="#">积分相关</a></li>
+			</ul>
+        </div>
+        <div class="footitem">
+        <h3>手机淘爱心</h3>
+        <ul class="data">
+				<li><a href="#" class="active">iphone</a></li>
+				<li><a href="#">Andriod</a></li>
+			</ul>
+        </div>
+        <div class="footitem">
+        <h3>在线客服</h3>
+        <ul class="data">
+				<li><a href="#" class="active">工作时间：9：00～18:00</a></li>
+				<li><a href="#">建议邮箱：11111111@qq.com</a></li>
+				
+			</ul>
+        </div>
+    </div>
+</div>
+<div class="hr_45">
+<p>Copyright&nbsp;&nbsp;&nbsp;2015&nbsp;&nbsp;taoaixin.com&nbsp;&nbsp;杭州电子科技大学版权所有</p>
+</div>
+</body>
+</html>
